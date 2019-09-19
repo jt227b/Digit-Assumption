@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- GetSkeleton -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7e09908c25.js"></script>
+
+  <title>Digit Assumption</title>
+  <style>
+    body {
+      /* color: #f4f4f4; */
+      text-align: center;
+      padding-top: 6rem;
+      /* background: url('https://djangocentral.com/wp-content/uploads/2019/01/New-Project-8.png') no-repeat center center/cover; */
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Digit Assumption <i class="fas fa-sort-numeric-up-alt"></i></h1>
+    <div id="game">
+      <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+      <input type="number" id="guess-input" placeholder="Enter your guess...">
+      <input type="submit" value="Submit" id="guess-btn">
+      <p class="message"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
