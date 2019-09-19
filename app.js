@@ -60,7 +60,11 @@ guessBtn.addEventListener('click', function () {
       // Change border color to red when you lose
       guessInput.style.borderColor = 'red';
 
-      setMessage(`${guess} is not correct, ${guessesLeft} guesses left`);
+      // Clear input feature
+      guessInput.value = '';
+
+      // Tell user this is the wrong number
+      setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
     }
   }
 });
